@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    padding: 15px;
+}
+
+#contenedor {
+    max-width: 1320px;
+}
+
+/*La altura de la cabecera debe de ser de 80px*/
+header {
+    padding-top: 80px;
+}
+
+/*Menú responsive*/
+.responsivemenu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 200px;
+    background: #222;
+    font-variant: small-caps;
+    text-shadow: 1px 1px #888;
+}
+.responsivemenu input[type="checkbox"], .responsivemenu .fa-bars, .responsivemenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+}
+
+.responsivemenu .fa-bars, .responsivemenu .fa-times {
+    font-size: 36px;
+    pointer-events: none;
+}
+
+.responsivemenu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.responsivemenu {
+    color: black;
+    position: relative;
+    min-height: 36px;
+}
+
+.responsivemenu nav {
+    display: none;
+}
+
+.responsivemenu input:checked ~ nav {
+    display: block;
+}
+
+.responsivemenu input:checked ~ .fa-bars {
+    display: none;
+}
+
+.responsivemenu input:not(:checked) ~ .fa-times {
+    display: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #888;
+    border-color: #888;
+    margin-top: 70px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #222;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.articulo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+    padding: 0;
+}
+
+img/*, :not(.author img)*/ {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+    border-radius: 2%;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.rrssresponsive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rrssh i{
+margin-right: 20px;
+font-size: 13px;
+}
+
+.busqueda {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    float:right;
+}
+
+.busqueda input[type=text]{
+    height:35px;
+    width: 460px;
+    border-radius:25px;
+    border: 1px solid #888;
+}
+
+.icono {
+    position: absolute;
+    display: block;
+    bottom: .5rem;
+    right: 27.5rem;
+}
+
+.seccion-destacado, .articulo-destacado {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.author img{
+    border-radius: 50%;
+    width: 50px;
+	height: 50px;
+	object-fit: cover;
+    object-position: center top;
+    margin: 0;
+    margin-right: 10px;
+    float: left;
+}
+
+.categoria span, .nombre {
+    font-weight: bold;
+    color: #222;
+}
+
+p.categoria {
+    margin: 0;
+    padding: 0;
+}
+
+p.nombre, p.posicion{
+    margin: 0px;
+}
+
+/*La altura de la newsletter debe ser 180px justos*/
+.newsletter {
+    padding-top: 180px;
+}
+
+/*La altura del footer debe ser 340px*/
+footer {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 30px 15px 30px 15px;
+}
+
+.formulario p{
+    font-size: 18px;
+    font-weight: 600;
+    /*margin-top: 60px;*/
+}
+
+.formulario input[type=text]{
+    height:35px;
+    width: 400px;
+    border: 1px solid #888;
+    margin-bottom: 15px;
+}
+
+.formulario button{
+border-radius:25px;
+border: 0;
+height:35px;
+width: 400px;
+font-size: 10px;
+font-weight:900;
+background-color: #f79918;
+color: white;
+}
+
+.rrss{
+    text-align: center;
+}
+
+.rrss i{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-color: #cccccc;
+    color: #000000;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    width: 13px;
+}
+
+.copyright span{
+    color: #dc3545;
+}
+
+.copyright p{
+    font-size: 13px;
+    text-align: center;
+    padding: 0 60px 20px 60px;
+}
+
+@media (min-width: 600px){
+
+    header{
+        max-width: 900px;
+        margin-left: 20%;
+    }
+
+    #contenedor {
+        max-width: 925px;
+        margin-left: 20%;
+    }
+
+    .logo{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    hr{
+        margin-top: 15px;
+    }
+
+    h1{
+        margin-bottom: 70px;
+    }
+
+    .articulo h3{
+        font-size: 12px;
+        padding-bottom: 7px;
+        padding-right: 5px;
+    }
+
+    .articulos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .articulo{
+        width: 33.33%;
+        margin: 0 0 30px 0;
+    }
+
+    .rrssresponsive{
+        justify-content: end;
+        margin-top: -25px;
+    }
+
+    .rrssh{
+        margin-right: 150px;
+    }
+
+    .busqueda {
+        margin-top: -40px;
+        margin-bottom: 10px;
+        position: relative;
+        float: left;
+    }
+
+    .busqueda input[type=text]{
+        height:35px;
+        width: 260px;
+        border-radius:25px;
+        border: 1px solid #888;
+    }
+
+    .icono {
+        position: absolute;
+        display: block;
+        bottom: .5rem;
+        right: 15rem;
+    }
+
+    img{
+        width: 270px;
+        margin: 0 0 16px 0;
+    }
+
+    .seccion-destacado{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0;
+    }
+
+    .articulo-destacado{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        align-items: center;
+    }
+
+    .articulo-destacado>picture>img{
+        width: 300px;
+        height: 260px;
+    }
+    .articulo-destacado>section>.author{
+        display: block;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .articulo-destacado>section>.author>section>p{
+        font-size: 9px;
+    }
+
+    .articulo-destacado>section>.author>picture>img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .articulo-destacado>section{
+        margin-left: 30px;
+        margin-top: -16px;
+    }
+    .articulo-destacado>section>section>h2{
+        font-size: 1.8em;
+        margin: 10px 20px 0 0;
+    }
+
+    .articulo-destacado>section>section>p{
+        font-size: 10px;
+    }
+
+    .popular{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .articulos p{
+        font-size: 10px;
+        padding-right: 20px;
+    }
+
+    .articulos .author img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .articulos .author{
+        padding-top: 10px;
+    }
+
+    .articulo-mas-populares>picture>img{
+        width: 550px;
+        margin-top: 10px;
+    }
+
+    h2.popular{
+        margin: 0 0 20px 0;
+    }
+
+    .articulo-mas-populares p.categoria{
+        font-size: 10px;
+    }
+
+    .articulo-mas-populares img{
+        margin: 10px 0 15px 0;
+    }
+
+    .articulo-mas-populares h2{
+        font-size: 13px;
+        margin: 0 0 10px 0;
+    }
+
+    .articulo-mas-populares p{
+        font-size: 10px;
+    }
+
+    .articulo-mas-populares>section>p{
+        margin-bottom: 10px;
+    }
+
+    .articulo-mas-populares .author img{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 0 0;
+    }
+
+    .articulo-mas-populares .author section{
+        font-size: 10px;
+    }
+
+    section.formulario input{
+        display: inline-flex;
+        margin-right: 25px;
+    }
+
+    .formulario input[type=text]{
+        margin-bottom: 0;
+    }
+
+    .articulo-mas-populares{
+        margin-bottom: 60px;
+    }
+
+    section.formulario form{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+} /*g.lopezgarcia2@edu.gva.es*/
